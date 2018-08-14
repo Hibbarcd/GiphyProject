@@ -36,7 +36,7 @@ $( document ).ready(function() {
 
     function displayGifs(){
         var animal = $(this).attr("data-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=lrsooYRr3F7AO9WPm7K3vvOnXt3OGcZB&limit=10&rating=pg-13";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=lrsooYRr3F7AO9WPm7K3vvOnXt3OGcZB&limit=10&rating=pg-13";
         console.log(queryURL); 
 
         $.ajax({

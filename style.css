@@ -1,26 +1,46 @@
-
+body {
+  background-image: url(background.jfif);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+}
 input {
   margin: 10px;
 }
 h1 {
+  font-size: 40pt;
   position: relative;
   text-align: center;
+  text-shadow: 2px 0 4px #FF0000, 2px 3px 5px black;
+  color: green;
 }
-
-button {
-    position: static;
+label {
+  color: blanchedalmond;
+ font-size: 18pt; 
+}
+.animal {
+    position: relative;
     z-index: 2;
     width: 80px;
     height: 40px;
-    
-    background-color: gray;
+    background-color: green;
     color: blanchedalmond;
     text-align: center;
-    margin: 20px;
+    margin: 20px; 
+    border-radius: 20px;
 }
-.animalImg {
-  width: 300px;
-  height: 300px;
+#add-animal {
+  height: 40px;
+  border-radius: 20px;
+  background-color: green;
+  color: blanchedalmond;
+  text-align: center;
+}
+.gifDiv {
+  height: 200px;
+  width: 200px;
   display: inline-block;
   position: relative;
+  margin: 40px;
 }

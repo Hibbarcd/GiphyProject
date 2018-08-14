@@ -19,17 +19,17 @@ $( document ).ready(function() {
         var animal = $("#animal-input").val().trim();
         animals.push(animal);
         console.log(animal);
-        
+                    // addNewButton();
+                    if (animal == ""){
+                        return false; 
+                    // user cannot add a blank button
+                    }
         var gifButton = $("<button>");
         gifButton.addClass("animal");
         gifButton.attr("data-name", animal);
         gifButton.text(animal);
         $("#animalbtn").prepend(gifButton);
-            // addNewButton();
-            if (animal == ""){
-                return false; 
-            // user cannot add a blank button
-            }
+
         });
         displayGifButtons(); 
     });
